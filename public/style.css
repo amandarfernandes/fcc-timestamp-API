@@ -1,0 +1,58 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+  color:#666;
+}
+
+h1,h2,h3,h4 {
+  color:#333;
+
+}
+
+p {
+font-size:1.1em;
+}
+
+
+.container {
+   margin: auto;
+   width: 50vh;
+  min-width: 400px;
+}
+
+li {
+  line-height:1.5em;
+}
+
+code {
+  color:red;
+  font-size:1.2em;
+}
+
+
+footer {
+  text-align:center;
+  margin:50px auto;
+  color:#000;
+} 
+
+footer a,
+footer a:link,
+footer a:visited,
+footer a:active
+{
+  color:#666;
+  text-decoration:none;
+  font-size:2em;
+}
+

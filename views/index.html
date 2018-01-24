@@ -1,0 +1,94 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timestamp Microservice</title>
+    <meta name="description" content="FCC backed project 1">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    
+    <div class="container">
+    <header>
+      <h1>FreeCodeCamp Backend Challenge #1</h1>
+    </header>
+
+    <main>
+    <h2> Timestamp Microservice  </h2>    
+    <h3>Objective</h3>
+    <p>
+      Build a full stack JavaScript app that is functionally similar to <a href="https://timestamp-ms.herokuapp.com/">this</a>  and deploy it to Glitch.
+    </p>
+
+    <p>
+      Here are the specific user stories you should implement for this project:
+      </p>
+
+      <ol>
+        <li>
+          I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016).
+        </li>
+        <li>
+        If it does, it returns both the Unix timestamp and the natural language form of that date.
+        </li>
+        <li>
+        If it does not contain a date or Unix timestamp, it returns null for those properties.        
+        </li>
+      </ol>
+
+      <h3>
+        Example usage:
+      </h3>
+      <code>
+      https://fcc-api-1.glitch.me/December%2015,%202015
+      <br />https://fcc-api-1.glitch.me/1450137600
+      </code>
+    <h3>
+      Example output:
+    </h3>
+    <code>
+    { "unix": 1450137600, "natural": "December 15, 2015" }
+      </code>
+
+
+    </main>
+    <footer>
+      Made by Amanda R. Fernandes.       
+      <p>
+        <a target="_blank"
+      href="https://www.linkedin.com/in/amandadcunhafernandes/" 
+      class="fa fa-linkedin"></a>  
+      <a target="_blank" 
+      href="https://twitter.com/mandycodestoo" 
+      class="fa fa-twitter"></a>
+        <a target="_blank"
+      href="https://github.com/amandarfernandes" 
+      class="fa fa-github"></a>  
+        <a target="_blank" 
+      href="https://codepen.io/mandycodestoo/#" 
+      class="fa fa-codepen"></a>  
+      </p> 
+      </div>
+    </footer>  
+    </div>
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
